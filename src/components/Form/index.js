@@ -4,13 +4,13 @@ import intent from './intent'
 import view from './view'
 
 export default (DOM, HTTP) => {
-  const actions = intent(DOM, HTTP)
-  const state$ = model(actions)
+  const { formChange$, requests$ } = intent(DOM, HTTP)
+  const state$ = model(formChange$)
   const vtree$ = view(state$)
 
   return {
     DOM: vtree$,
     DATA: state$,
-    HTTP: actions.requests$
+    HTTP: requests$
   }
 }
