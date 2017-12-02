@@ -1,0 +1,9 @@
+@import '../../node_modules/milligram/dist/milligram.css';
+
+$purple: #800080;
+
+.avatar {
+  border: 1px solid $purple;
+  height: 128px;
+  width: 128px;
+}
