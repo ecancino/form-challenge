@@ -1,6 +1,6 @@
 @import '../../node_modules/milligram/dist/milligram.css';
 
-$purple: #800080;
+$purple: #9b4dca;
 
 .avatar {
   border: 1px solid $purple;
@@ -11,4 +11,19 @@ $purple: #800080;
 .label-inline {
   margin-left: 5px;
   margin-right: 30px;
+}
+
+section {
+  .column {
+    margin-bottom: 1.5rem !important;
+  }
+}
+
+input {
+  margin-bottom: 0;
+}
+
+.error {
+  color: $purple;
+  font-size: .8em;
 }
