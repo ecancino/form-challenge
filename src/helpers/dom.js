@@ -1,9 +1,9 @@
 import { section, label, input, select, option, img, span, pre } from '@cycle/dom'
-import { map, concat, contains, always } from 'ramda'
+import { map, concat, equals, always } from 'ramda'
 import { toJSON } from './data'
 
 export const createOption = value => ({ name }) =>
-  option({ attrs: { value: name, selected: contains(value, name) } }, [ name ])
+  option({ attrs: { value: name, selected: equals(value, name) } }, [ name ])
 
 export const createSelect = (name, options, value, empty) =>
   select(`#${name}`, {}, map(createOption(value), concat([empty], options)))
