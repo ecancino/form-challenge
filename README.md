@@ -40,7 +40,7 @@ So, the form will be:
 - Phone: Valid format
 - Region:
   - The field should auto-select the value provided
-  - You can add a couple of options or can use this: [countries.json](https:/s3-us-west-2.amazonaws.com/s.cdpn.io/170817/countries.json)
+  - You can add a couple of options or can use this: [restcountries.eu](https://restcountries.eu/rest/v2/all)
 - Gender: The field should auto-select the value provided
 - Birthday: Valid format
 - Active: Add / Remove Boolean to object
